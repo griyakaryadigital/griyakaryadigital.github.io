@@ -190,7 +190,9 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
+		$(window).load(function() {
+			$(".fh5co-loader").fadeOut("slow");
+		});
 	};
 
 	var counter = function() {
